@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<body>
-<html>
-
-    <head>
-        <title> Scrap Findings - Katie - Wu - GD2 </title>
-    </head>
-</html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>My Intro Website</title>
-
-
-    <style>
 		
         body {
             margin: 0;
@@ -64,72 +48,26 @@
             background-color: #eee;
             color: #777;
         }
-
-		
-    </style>
-</head>
-<body>
-
-
-   
-</div>
-
-
-    <header>
-	<div class="hero">
-        <h1>Scrap Findings</h1>
-        <p>By Katie Wu</p>
-
-		 <img src="scrap 1.png" class="side-image" alt="decorative image">
-	</div>
-    </header>
-
-
-    <section>
-        <h2>Welcome</h2>
-        <p>An archive of scraps and abandoned artworks</p>
-        <button onclick="showMessage()">Click to start journey</button>
-    </section>
-
-	 
-
-    <footer>
-        © 2026 GD2 Website
-    </footer>
-
-    <script>
-        function showMessage() {
-            alert("Thanks for visiting my website!");
-        }
-    </script>
-
-	 <style>
-		.hero {
+	.hero {
     position: relative;
     text-align: center;
     margin-top: 100px;
-	}
+}
 
-	.hero h1,
-	.hero p {
+.hero h1,
+.hero p {
     position: relative;
     z-index: 2;
-	}
+}
 
-	.side-image {
+.side-image {
     position: absolute;
     top: 20px;
     right: 20%;
-    width: 200px;
+    width: 250px;
 
     transform: rotate(-15deg);
     z-index: 1;
 
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
-
- </style>
-
-</body>
-</html>
-
