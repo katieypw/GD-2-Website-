@@ -5,7 +5,7 @@
 <html>
 
     <head>
-        <title> Scrap Findings - Katie - Wu - GD2 </title>
+        <title> Riso Attic by Katie </title>
     </head>
 </html>
 
@@ -24,8 +24,8 @@
         }
 
         header {
-            background-color: #73C8DD;
-            color: white;
+            background-color: #dcdcdc;
+            color: #555;
             padding: 40px 20px;
         }
 
@@ -42,28 +42,29 @@
         section {
             padding: 60px 20px;
         }
+	
+		.start-button {
+    display: inline-block;
+    background: #dcdcdc;
+    padding: 18px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
 
-        button {
-            padding: 12px 24px;
-            font-size: 16px;
-			font-family: 'Pacifico';
-            border: none;
-            background-color: #73C8DD;
-            color: white;
-            cursor: pointer;
-            border-radius: 6px;
-        }
+.start-button:hover {
+    background: #e9e7e2;
+}
 
-        button:hover {
-            background-color: #444;
-        }
-
-        footer {
-            margin-top: 60px;
-            padding: 20px;
-            background-color: #eee;
-            color: #777;
-        }
+.start-button {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.start-button:hover {
+    background: #bfbfbf;
+    transform: translateY(-2px);
+}
 
 		
     </style>
@@ -77,19 +78,21 @@
 
     <header>
 	<div class="hero">
-        <h1>Scrap Findings</h1>
+        <h1>Riso Attic</h1>
         <p>By Katie Wu</p>
-
-		 <img src="scrap 1.png" class="side-image" alt="decorative image">
 	</div>
     </header>
 
 
-    <section>
-        <h2>Welcome</h2>
-        <p>An archive of scraps and abandoned artworks</p>
-        <button onclick="showMessage()">Click to start journey</button>
-    </section>
+  <section>
+    <h2>Welcome</h2>
+    <p>An archive of scraps and abandoned artworks</p>
+
+    <a href="main-page.html" class="start-button">
+        Click to start journey
+    </a>
+</section>
+
 
 	 
 
@@ -97,11 +100,6 @@
         © 2026 GD2 Website
     </footer>
 
-    <script>
-        function showMessage() {
-            alert("Thanks for visiting my website!");
-        }
-    </script>
 
 	 <style>
 		.hero {
