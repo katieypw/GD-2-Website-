@@ -1,0 +1,231 @@
+
+
+        body {
+            margin: 0;
+            font-family: 'Pacifico';
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #73C8DD;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+			font-family: 'Pacifico';
+            border: none;
+            background-color: #73C8DD;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #eee;
+            color: #777;
+        }
+	.hero {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.side-image {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    width: 250px;
+
+    transform: rotate(-15deg);
+    z-index: 1;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f3f3f3;
+    color: #111;
+}
+
+.page {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+/* ---------- LEFT SIDE ---------- */
+
+.left-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Menu Button (top left rectangle) */
+
+.menu-button {
+    background: #dcdcdc;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+.menu-button:hover {
+    background: #cfcfcf;
+}
+
+/* Description Box */
+
+.description {
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 16px;
+    line-height: 1.6;
+}
+
+/* Back Button */
+
+.back-button {
+    margin-top: auto;
+    background: #dcdcdc;
+    border: none;
+    padding: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.back-button:hover {
+    background: #cfcfcf;
+}
+
+/* ---------- CENTER IMAGE ---------- */
+
+.center-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrap-image {
+    max-width: 800px;
+    width: 100%;
+    background: #ddd;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.scrap-image img {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- RIGHT INFO PANEL ---------- */
+
+.right-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Info Circle Button */
+
+.info-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #dcdcdc;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown Panel */
+
+.related-panel {
+    margin-top: 20px;
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 40px;
+    display: none;
+    width: 180px;
+}
+
+.related-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-panel li {
+    margin-bottom: 15px;
+}
+
+.related-panel a {
+    text-decoration: none;
+    color: black;
+}
+
+.related-panel a:hover {
+    text-decoration: underline;
+}
+
+/* Show dropdown */
+
+.related-panel.active {
+    display: block;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1000px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .right-column {
+        align-items: flex-start;
+    }
+}
+

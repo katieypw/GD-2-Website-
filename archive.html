@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riso Attic</title>
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f3f3f3;
+    color: #111;
+}
+
+.page {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+/* ---------- LEFT SIDE ---------- */
+
+.left-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Menu Button (top left rectangle) */
+
+.menu-button {
+    background: #dcdcdc;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+.menu-button:hover {
+    background: #cfcfcf;
+}
+
+/* Description Box */
+
+.description {
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 16px;
+    line-height: 1.6;
+}
+
+/* Back Button */
+
+.back-button {
+    margin-top: auto;
+    background: #dcdcdc;
+    border: none;
+    padding: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.back-button:hover {
+    background: #cfcfcf;
+}
+
+/* ---------- CENTER IMAGE ---------- */
+
+.center-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrap {
+    max-width: 800px;
+    width: 100%;
+    background: #ddd;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.scrap {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- RIGHT INFO PANEL ---------- */
+
+.right-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Info Circle Button */
+
+.info-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #dcdcdc;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown Panel */
+
+.related-panel {
+    margin-top: 20px;
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 40px;
+    display: none;
+    width: 180px;
+}
+
+.related-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-panel li {
+    margin-bottom: 15px;
+}
+
+.related-panel a {
+    text-decoration: none;
+    color: black;
+}
+
+.related-panel a:hover {
+    text-decoration: underline;
+}
+
+/* Show dropdown */
+
+.related-panel.active {
+    display: block;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1000px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .right-column {
+        align-items: flex-start;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- LEFT SIDE -->
+    <div class="left-column">
+        
+        <a href="archive.html" class="menu-button">
+            Riso Attic
+        </a>
+
+        <div class="description">
+            <h3>Description</h3>
+            <p>
+                This archived scrap explores failed color layering in risography 
+                prints. The misregistration between magenta and blue creates 
+                accidental textures that reflect the unpredictability of print.
+            </p>
+        </div>
+
+        <button class="back-button" onclick="history.back()">
+            ← Back
+        </button>
+
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="center-column">
+        <div class="scrap images">
+            <img src="scrap images/scrap 2.jpg">
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-column">
+
+        <button class="info-toggle" onclick="toggleInfo()">
+            !
+        </button>
+
+        <div class="related-panel" id="related">
+            <ul>
+                <li><a href="#">Misprint 01</a></li>
+                <li><a href="#">Abandoned Layer Study</a></li>
+                <li><a href="#">Color Shift Test</a></li>
+                <li><a href="#">Registration Errors</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function toggleInfo() {
+    document.getElementById("related").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
