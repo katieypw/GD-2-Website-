@@ -179,3 +179,99 @@ body {
         align-items: flex-start;
     }
 }
+
+/* * ---------- Main Page ---------- */ 
+
+body {
+    margin: 0;
+    background: #e9e9e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.nav-wrapper {
+    position: relative;
+    width: 700px;
+    height: 600px;
+}
+
+/* CENTER DIAMOND */
+.center-diamond {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #cfcfcf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-diamond span {
+    transform: rotate(-45deg);
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+/* SHAPES BASE */
+.shape {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #cfcfcf;
+    transition: 0.3s ease;
+}
+
+/* Circle */
+.circle {
+    border-radius: 70%;
+}
+
+/* Square */
+.square {
+    border-radius: 30;
+}
+
+/* Hover effect */
+.shape:hover {
+    transform: scale(1.15);
+    background: #ff4f87;
+}
+
+/* Positioning around diamond */
+.pink {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d94b7a;
+}
+
+.top-right {
+    top: 140px;
+    right: 50px;
+}
+
+.left {
+    top: 260px;
+    left: 20px;
+}
+
+.right {
+    top: 260px;
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 140px;
+    left: 80px;
+}
+
+.bottom-right {
+    bottom: 140px;
+    right: 80px;
+}
+
