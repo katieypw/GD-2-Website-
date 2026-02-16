@@ -5,183 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riso Attic</title>
 
-<!-- Import fonts properly -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
-<style>
+<!-- Connect CSS file -->
+<link rel="stylesheet" href="style.css">
 
-/* ---------- GLOBAL ---------- */
-body {
-    margin: 0;
-    font-family: 'EB Garamond', serif;
-    background-color: #f3f3f3;
-    color: #111;
-}
-
-.page {
-    display: flex;
-    padding: 40px;
-    gap: 40px;
-}
-
-/* ---------- LEFT SIDE ---------- */
-.left-column {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Menu Button (top left rectangle) */
-.menu-button {
-    background: #dcdcdc;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: 0.2s ease;
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.menu-button:hover {
-    background: #cfcfcf;
-}
-
-/* ---------- LEFT SIDEBAR DESCRIPTION SECTIONS ---------- */
-.sidebar-section {
-    background: #e8e8e8;  /* grey background like right sidebar */
-    padding: 15px 20px;
-    border-radius: 16px;
-}
-
-.sidebar-section h3 {
-    margin: 0 0 8px 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #333;
-}
-
-.sidebar-section p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #555;
-}
-
-/* Back Button */
-.back-button {
-    display: block;
-    width: fit-content;
-    margin: auto 0 0 auto;
-    align-self: center;
-
-    background: #dcdcdc;
-    padding: 18px 30px;
-    border-radius: 40px;
-
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.back-button:hover {
-    background: #bfbfbf;
-    transform: translateY(-2px);
-}
-
-/* ---------- CENTER IMAGE ---------- */
-.center-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.scrap {
-    max-width: 400px;
-    width: 100%;
-    background: #ddd;  /* grey background */
-    padding: 40px;
-    border-radius: 12px;
-}
-
-.scrap img {
-    width: 100%;
-    display: block;
-    border-radius: 6px;
-}
-
-/* ---------- RIGHT INFO PANEL ---------- */
-.right-column {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-/* Info Circle Button */
-.info-toggle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #e9e7e2;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-/* Dropdown Panel */
-.related-panel {
-    margin-top: 20px;
-    background: #e8e8e8;
-    padding: 20px;
-    border-radius: 40px;
-    display: none;
-    width: 180px;
-}
-
-.related-panel ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.related-panel li {
-    margin-bottom: 15px;
-}
-
-.related-panel a {
-    text-decoration: none;
-    color: black;
-}
-
-.related-panel a:hover {
-    text-decoration: underline;
-}
-
-/* Show dropdown */
-.related-panel.active {
-    display: block;
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 1000px) {
-    .page {
-        flex-direction: column;
-    }
-
-    .right-column {
-        align-items: flex-start;
-    }
-}
-
-</style>
 </head>
 
 <body>
@@ -193,7 +22,6 @@ body {
 
         <a href="gd 2 website.html" class="menu-button">Riso Attic</a>
 
-        <!-- Sidebar Sections -->
         <div class="sidebar-section">
             <h3>Date Found</h3>
             <p>February 12, 2026</p>
