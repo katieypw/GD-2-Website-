@@ -245,13 +245,14 @@ body {
 /* Positioning around diamond */
 .pink {
     top: 80px;
-    left: 17%;
+    left: 10%;
 
 }
 
 .top-left {
     top: 70px;
     right: 50px;
+   font-size: 20px;
 } 
 
 .top-right {
