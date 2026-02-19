@@ -12,9 +12,12 @@ body {
     display: flex;
     padding: 40px;
     gap: 40px;
+
 }
 
 /* ---------- LEFT SIDE ---------- */
+
+
 .left-column {
     width: 300px;
     display: flex;
@@ -79,11 +82,9 @@ body {
 }
 
 /* ---------- CENTER IMAGE ---------- */
-.center-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+html, body {
+    background-color: #21355C !important;
 }
 
 .scrap {
@@ -102,6 +103,7 @@ body {
 
 /* ---------- RIGHT INFO PANEL ---------- */
 
+
 .right-column {
     position: relative;
 }
@@ -113,10 +115,14 @@ body {
 
 .related-panel {
     position: absolute;
-    top: 40px;
-    left: -50px;
+    top: 50px;
+    left: -10px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
     background: white;
-    border: 1px solid black;
+    border: 1px solid salmon;
     padding: 50px;
     display: none;
     width: 20px; 
@@ -134,14 +140,20 @@ body {
     font-size: 18px;
     cursor: pointer;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: salmon;
     border-radius: 50%;
     transition: 0.3s;
 }
 
+.info-toggle {
+    position: absolute;
+    top: 10px;
+    right: -70px;
+}
+
 .info-toggle:hover {
-    background-color: #555;
+    background-color: #21355C;
 }
 
 
@@ -183,7 +195,7 @@ body {
 /* * ---------- Main Page ---------- */ 
 
 body {
-    margin: 0;
+    margin: 100;
     background: #e9e9e9;
     height: 100vh;
     display: flex;
@@ -216,6 +228,11 @@ body {
     font-size: 28px;
     letter-spacing: 3px;
 }
+
+.center-diamond:hover {
+    background-color: #a5a5a5;
+}
+
 
 /* SHAPES BASE */
 .shape {
