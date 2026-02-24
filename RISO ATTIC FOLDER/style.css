@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: #dcdcdc;
-    color: #555;
+    color: #21355C;
     padding: 40px 20px;
 }
 
@@ -70,12 +70,15 @@ section {
     transform: rotate(-15deg);
     z-index: 1;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}/* ---------- GLOBAL ---------- */
+}
+
+
+/* ---------- GLOBAL ---------- */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #f3f3f3;
-    color: #111;
+    color: salmon;
 }
 
 
@@ -111,7 +114,7 @@ body {
 }
 
 .menu-button:hover {
-    background: #cfcfcf;
+    background: #21355C;;
 }
 
 .sidebar-section {
@@ -157,7 +160,7 @@ body {
 
 html,
 body {
-    background-color: #21355C !important;
+    background-color: white !important;
 }
 
 .scrap {
@@ -269,7 +272,7 @@ body {
 
 body {
     margin: 0;
-    background: #e9e9e9;
+    background: salmon;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -302,7 +305,7 @@ body {
     height: 250px;
     background: #f2f2f2;
     transform: rotate(45deg);
-    margin: 100px auto;
+    margin: 170px auto;
     display: flex;
     align-items: center;
     justify-content: center;
