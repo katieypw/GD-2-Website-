@@ -148,7 +148,7 @@ body {
     border-radius: 40px;
     text-decoration: none;
     color: black;
-    font-size: -60px 900px;
+    font-size: -60px 300px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
