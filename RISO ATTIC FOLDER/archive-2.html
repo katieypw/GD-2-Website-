@@ -1,246 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riso Attic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrap Findings</title>
 
-<style>
-
-/* ---------- GLOBAL ---------- */
-
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    background-color: #f3f3f3;
-    color: #111;
-}
-
-.page {
-    display: flex;
-    padding: 40px;
-    gap: 40px;
-}
-
-/* ---------- LEFT SIDE ---------- */
-
-.left-column {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Menu Button (top left rectangle) */
-
-.menu-button {
-    background: #dcdcdc;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: 0.2s ease;
-}
-
-.menu-button:hover {
-    background: #cfcfcf;
-}
-
-body {
-    font-family: 'EB Garamond', serif;
-}
-
-.menu-button {
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-/* Description Box */
-
-.description {
-    background: #e8e8e8;
-    padding: 20px;
-    border-radius: 16px;
-    line-height: 1.6;
-}
-
-/* Back Button */
-
-.back-button {
-    display: block;              /* allows centering */
-    width: fit-content;          /* only as wide as text */
-    margin: auto 0 0 auto;       /* pushes it down */
-    align-self: center;          /* centers in flex column */
-
-    background: #dcdcdc;
-    padding: 18px 30px;
-    border-radius: 40px;
-
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-
-    transition: 0.2s ease;
-}
-
-.back-button:hover {
-    background: #cfcfcf;
-}
-
-/* ---------- CENTER IMAGE ---------- */
-
-.center-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.scrap {
-    max-width: 600px;
-    width: 100%;
-    background: #ddd;        /* 👈 grey background */
-    padding: 40px;           /* space around image */
-    border-radius: 12px;     /* soft corners */
-}
-
-.scrap img {
-    width: 100%;
-    display: block;
-    border-radius: 6px;      /* optional, slightly softer inside */
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Space+Grotesk:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 
 
-/* ---------- RIGHT INFO PANEL ---------- */
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
 
-.right-column {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-/* Info Circle Button */
-
-.info-toggle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #dcdcdc;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Dropdown Panel */
-
-.related-panel {
-    margin-top: 20px;
-    background: #e8e8e8;
-    padding: 20px;
-    border-radius: 40px;
-    display: none;
-    width: 180px;
-}
-
-.related-panel ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.related-panel li {
-    margin-bottom: 15px;
-}
-
-.related-panel a {
-    text-decoration: none;
-    color: black;
-}
-
-.related-panel a:hover {
-    text-decoration: underline;
-}
-
-/* Show dropdown */
-
-.related-panel.active {
-    display: block;
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media (max-width: 1000px) {
-    .page {
-        flex-direction: column;
-    }
-
-    .right-column {
-        align-items: flex-start;
-    }
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="page">
+    <div class="page">
 
-    <!-- LEFT SIDE -->
-    <div class="left-column">
-        
-        <a href="archive.html" class="menu-button">
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=EB+Garamond&display=swap" rel="stylesheet">
+        <!-- LEFT SIDE -->
+        <div class="left-column">
 
-            Riso Attic
-        </a>
+            <a href="gd 2 website.html" class="menu-button">Scrap Findings</a>
 
-        <div class="description">
-            <h3>002</h3>
-            <p>
-                This 11 x 17 Risography Print was found in the free scrap box of Ocad's Risography print shop at 667.
-                It was found on February 12th around 4pm after having failed attempts of collecting scraps on 3rd/4th floor. 
+           
+            <div class="sidebar-section">
+                <h3>Date Found</h3>
+                <p>3:50pm, February 12, 2026</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Location</h3>
+                <p>Ocad University 3rd Floor</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Description</h3>
+                <p>This piece of scrap was found in the shared scraps bin on the 3rd floor at Ocad University. Rough
+                    Textures are introduced, experimentations can include scanning, cutting through the material, or
+                    adding color</p>
+            </div>
+
+            <a href="main-page.html" class="back-button">← Back</a>
+
         </div>
 
-        <a href="archive-2.html" class="back-button">← Back</a>
-
-    </div>
-
-    <!-- CENTER IMAGE -->
-    <div class="center-column">
-        <div class="scrap">
-            <img src="scrap-images/scrap-3.jpg">
-        </div>
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="right-column">
-
-        <button class="info-toggle" onclick="toggleInfo()">
-            !
-        </button>
-
-        <div class="related-panel" id="related">
-            <ul>
-                <li><a href="#">Misprint 01</a></li>
-                <li><a href="#">Abandoned Layer Study</a></li>
-                <li><a href="#">Color Shift Test</a></li>
-                <li><a href="#">Registration Errors</a></li>
-            </ul>
+        <!-- CENTER IMAGE -->
+        <div class="center-column">
+            <div class="scrap">
+                <img src="scrap-images/scrap-4-1.JPG" alt="Scrap Image">
+            </div>
         </div>
 
-    </div>
+        <!-- RIGHT SIDE -->
+        <div class="right-column">
+            <div class="hidden-content">
+            </div>
 
-</div>
+            <div class="hover-box">
+                <button class="info-toggle">+</button>
 
-<script>
-function toggleInfo() {
-    document.getElementById("related").classList.toggle("active");
-}
-</script>
+                <div class="related-panel">
+                    <ul>
+                        <li>
+                            <a href="archive-2.html">002</a>
+                        </li>
+                        <li>
+                            <a href="#">003</a>
+                        </li>
+                        <li>
+                            <a href="#">004</a>
+                        </li>
+
+                    </ul>
+                    <a href="#">005</a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <script>
+                function toggleInfo() {
+                    document.getElementById("related").classList.toggle("active");
+                }
+            </script>
 
 </body>
+
 </html>

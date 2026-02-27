@@ -157,6 +157,9 @@ body {
     transform: translateY(-2px);
 }
 
+
+
+
 /* ---------- CENTER IMAGE ---------- */
 
 html,
@@ -218,7 +221,7 @@ body {
     cursor: pointer;
     border: none;
     background-color: white;
-    color: salmon;
+    color: #fa8072;
     border-radius: 50%;
     transition: 0.3s;
 }
@@ -233,6 +236,12 @@ body {
     background-color: #21355C;
 }
 
+.next-button {
+    display: block;
+    margin: 30px 60px;
+    width: fit-content;
+    padding: 18px 30px;
+}
 
 
 .related-panel ul {
