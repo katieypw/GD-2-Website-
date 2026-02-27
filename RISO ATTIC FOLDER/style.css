@@ -157,6 +157,12 @@ body {
     transform: translateY(-2px);
 }
 
+.next-button {
+    display: block;
+     margin: -60px 900px;
+    width: fit-content;
+    padding: 18px 30px;
+}
 
 
 
@@ -236,12 +242,6 @@ body {
     background-color: #21355C;
 }
 
-.next-button {
-    display: block;
-    margin: 30px 60px;
-    width: fit-content;
-    padding: 18px 30px;
-}
 
 
 .related-panel ul {
